@@ -1,67 +1,66 @@
 import React from "react";
+import "./CSS/Sidebar.css";
 import Public from "@mui/icons-material/Public";
 import Stars from "@mui/icons-material/Stars";
 import Work from "@mui/icons-material/Work";
+import { Link }  from "react-router-dom";
+
 const SideBar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-container">
         <div className="sidebar-options">
           <div className="sidebar-options">
-            <link>Home</link>
+            <Link href="#home">Home</Link>
           </div>
           <div className="sidebar-options">
-            <link>PUBLIC</link>
-            <div className="link">
-              <div className="link-tag">
+            <p>PUBLIC</p>
+            <div className="Link">
+              <div className="Link-tag">
                 <Public />
-                <link>Question</link>
+                <Link href="#questions">Questions</Link>
               </div>
               <div className="tag">
-                <link>Tags</link>
-                <link>Users</link>
+                <p>Tags</p>
+                <p>Users</p>
               </div>
             </div>
           </div>
 
           <div className="sidebar-options">
-            <link>COLLECTIVES</link>
-            <div className="link">
-              <div className="link-tag">
+            <p>COLLECTIVES</p>
+            <div className="Link">
+              <div className="Link-tag">
                 <Stars />
-                <link>Explore Collectives</link>
+                <Link href="#explore-collectives">Explore Collectives</Link>
               </div>
-              {/* <div className="tag">
-                <link>Tags</link>
-                <link>Users</link>
-              </div> */}
             </div>
           </div>
 
           <div className="sidebar-options">
-            <link>FIND A JOB</link>
-            <div className="link">
-              <div className="link-tag">
-                <link>Question</link>
+            <p>FIND A JOB</p>
+            <div className="Link">
+              <div className="Link-tag">
+                <Link href="#question">Question</Link>
               </div>
               <div className="tag">
-                <link>Jobs</link>
-                <link>Companies</link>
-                <link>Discussions</link>
+                <p>Jobs</p>
+                <p>Companies</p>
+                <p>Discussions</p>
               </div>
             </div>
           </div>
 
           <div className="sidebar-options">
-            <link>TEAMS</link>
-            <div className="link">
-              <div className="link-tag">
+            <p>TEAMS</p>
+            <div className="Link">
+              <div className="Link-tag">
                 <Work />
-                <link>Companies</link>
+                <Link href="#companies">Companies</Link>
               </div>
               <div className="tag">
-                <link>Tags</link>
-                <link>Users</link>
+                <p>Tags</p>
+                <p>Users</p>
               </div>
             </div>
           </div>

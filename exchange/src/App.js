@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Body_components from "./components/Body_components/SideBar/index.js";
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route,
   Redirect,
 } from "react-router-dom";
@@ -14,9 +14,9 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Routes>
+        <Switch>
           <Route exact path="/" component={Body_components} />
-        </Routes>
+        </Switch>
       </Router>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
-import Body_components from "./components/Body_components/SideBar/index.js";
+import Body_components from "./components/Body_components/index.js";
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,6 +16,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Body_components} />
+            <Route exact path="/add-question" component={Body_components} />
         </Switch>
       </Router>
     </div>

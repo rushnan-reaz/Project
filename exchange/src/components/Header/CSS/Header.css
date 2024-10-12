@@ -75,7 +75,7 @@
     outline: none; */
  .header-mid input[type="text"] {
   
-    align-content: left;
+    align-content: start;
     background: transparent;
     text-align: left;
     width: 300px;
